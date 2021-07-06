@@ -1,0 +1,257 @@
+.banner{
+    width: 100%;
+}
+.banner>img{
+    width: 100%;
+}
+
+/*产品  */
+.product{
+  background-color: #fbfaf7;
+  padding:5em 0;
+}
+.product .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.product .left .title{
+  font-size: 3em;
+  font-weight: bold;
+  color: #0078d7;
+  margin-bottom: .3em;
+}
+.product .left .info{
+  color: #666;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+  letter-spacing: 1px;
+}
+.container .list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.product .left .list .item{
+  width: 47%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+.product .left .list .item .content{
+  width: 69%;
+}
+.product .left .list .item .content .name{
+  font-size: 1.2em;
+  color:#000;
+	font-weight: 400;
+	margin-bottom:.2em;
+}
+.product .left .list .item .content .desc{
+	font-size:.9em;
+	color:#666666;
+}
+/* x<998px */
+@media screen and (max-width:1000px){
+  .product .right{
+		display: none;
+	}
+}
+
+/* 优势 */
+.youshi .container{
+  display: flex;
+  margin: 5em 0;
+  justify-content: space-between;
+  align-items: flex-end;
+ 
+}
+
+.youshi .right .title{
+  color: #a9cc28;
+  font-weight: bold;
+  font-size: 2em;
+  padding-bottom: .5em;
+}
+.youshi .right .item{
+  display: flex;
+  align-items: center;
+  padding:.5em ;
+}
+.youshi .right .img{
+  margin-right: 1em;
+}
+
+/* 产品家族 */
+.family{
+  background-color: #0079d7;
+  padding: 5em 0;
+}
+.family .title{
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.801);
+  text-align: center;
+  padding-bottom: 2em;
+}
+.family .list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.family .list .item{
+  width: 47%;
+  display: flex;
+  color: rgba(255, 255, 255, 0.705);
+  margin-bottom: 2em;
+}
+.family .list .item .name{
+  font-size: 1.7em;
+  margin-bottom: .5em;
+}
+.family .list .item .info{
+  font-size: .8em;
+  font-weight: 100;
+  line-height: 20px;
+}
+.family .list .item .img{
+  margin-right: 2em;
+  align-self: center;
+}
+@media screen and (max-width:550px){
+  .product .left .list .item{
+    width: 100%;
+  }
+  .product .left .title{
+    font-size: 1.5em;
+  }
+  /* 优势 */
+	.youshi .right .title{
+		font-size:1.5em;
+	}
+
+	.youshi .container{
+		justify-content: left;
+	}
+
+	.youshi .left{
+		display: none;
+	}
+
+  /* 产品家族 */
+  .family  .list .item{
+    width: 100%;
+  }
+}
+/* game */
+.game{
+  margin: 5em 0;
+}
+.game .top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.game .top .title{
+  font-size: 2em;
+}
+.game .top a{
+  text-decoration: none;
+}
+.game .bottom {
+  display: flex;
+  
+}
+.game .bottom .left{
+  margin-right: 2em;
+}
+
+.game .bottom .left img{
+  width: 100%;
+}
+.game .bottom .right .list{
+  display: flex;
+
+}
+.game .bottom .right .list .item{
+  width: 16%;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.game .bottom .right .list .item .item_name{
+  text-align: center;
+}
+/* friends */
+.friends{
+  margin: 5em 0;
+}
+.friends .top{
+  margin-bottom: 2em;
+}
+.friends .top h3{
+  font-size: 2em;
+}
+.friends .top span{
+  font-size: .1em;
+}
+.friends .bottom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.friends .bottom>div{
+  width: 25%;
+  margin-bottom: .5em;
+  text-align: center;
+}
+@media screen and (max-width:1000px){
+  .game .top .title{
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: .5em;
+  }
+  .game .top {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .game .bottom{
+    flex-wrap: wrap;
+  }
+  .game .bottom .left{
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .game .top .title{
+    font-size: 1em;
+    width: 100%;
+    margin-bottom: .5em;
+  }
+  .game .top {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .game .bottom{
+    flex-wrap: wrap;
+  }
+  .game .bottom .left{
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: 100%;
+  }
+  .game .bottom .right .list .item{
+    width: 25%;
+  }
+}
+@media screen and (max-width:700px){
+  .friends .bottom>div{
+    width: 40%;
+    margin-bottom: .5em; 
+    
+  }
+}
